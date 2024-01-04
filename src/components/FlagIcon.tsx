@@ -26,6 +26,13 @@ export function FlagIcon(props: FlagIconProps) {
       </div>
     );
 
+  if (props.langCode === "ca")
+    return (
+      <div className="w-8 h-6 rounded bg-[#2E3439] flex justify-center items-center overflow-hidden">
+        <img src="/catalonia.svg" className="w-100 h-100" />
+      </div>
+    );
+
   if (props.langCode === "minion")
     return (
       <div className="w-8 h-6 rounded bg-[#ffff1a] flex justify-center items-center">
